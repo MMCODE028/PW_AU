@@ -19,7 +19,7 @@ Forge_CLIENT_SECRET = os.getenv('Forge_CLIENT_SECRET')
 
 authForge_router = APIRouter()
 
-@authForge_router.post("/token")
+@authForge_router.get("/token")
 def AuthToken():
     # Requerimientos 
         # Cliente ID
